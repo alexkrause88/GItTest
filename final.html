@@ -1,0 +1,51 @@
+Alex Krause
+
+Artificial Intelligence 
+
+NorthEastern Illinois University
+
+Final Project 
+
+
+Shortest Path
+
+For my project I will be implementing Dijkstra's Algorithm/Backtracking to find the shortest path between two nodes. The data structure that I will be using to represent a map will be a dictionary. Everything is to be coded in PYTHON.
+
+HOW TO INSTALL AND RUN: 
+=>Save the Python file in your desktop folder
+=> Open up the your terminal/CMD
+=>Type in: python Desktop/final.py into your window
+=>Enjoy. 
+
+HOW TO USE THE PROGRAM:
+The program will ask the user where they are starting from on the floor:
+=> Enter starting point from the list of options
+=> Enter the ending point from the original list of options
+*That's it! The program will then begin to calculate the shortest path based on cost distance. 
+
+The Problem to be solved: Find the shortest path on the third floor of the LWH building at Northeastern Illinois University.  The path will be between two classrooms (or Elevator) of the users choosing. 
+
+The 3rd floor at LWH is set up like a square/circle and there is a middle route that will lead you through a short cut.  By implementing this program the user will not have to take the long way to their classroom and avoid the hassle of walking the full circle
+
+The Algorithm:
+Finding new paths. When processing a vertex , the algorithm will examine all vertices . For each vertex, a new path “from to” is found (path from to + new edge).
+If the length of the new path “from to” is shorter than, then update to the length of this new path.
+
+The Program:
+This program start off with a pre populated Dictionary that explains each node represented as classroom numbers. Each node that is listed come with an inner array of all the nodes that it connects with. It also lists the cost/length of the vertices between NODES. We will attempt to choose/comparing the lowest value, which requires keeping track of each possible route. 
+PLEASE SEE SOURE CODE FOR COMMENTS ON INDIVIDUAL BLOCKS ☺
+
+
+
+How to use the program:
+The program will ask the user where they are starting from on the floor:
+=> Enter starting point from the list of options
+=> Enter the ending point from the original list of options
+*That's it! The program will then begin to calculate the shortest path based on cost distance 
+
+Problem that I ran into:
+-Final output is suppose to be the shortest sum of value/cost between nods from point A to point B (not necessarily distance)
+- Choosing/comparing the lowest value, which requires keeping track of each possible route is where I couldn't solve the issue.
+- If you cannot keep track of the costs then we can't compare the inaccurate costs... that's why cost keeps going up instead of going back to the previous possible route.
+*I originally did this program in PHP and was able to find and was able to find a better result.. I ran into many issues dealing with recursion and converting into python
+*My PHP program is attached as well
